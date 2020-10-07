@@ -38,5 +38,5 @@ import State from "./[state].svelte";
 </div>
 
 <CovidStat {...usStats} />
-<CovidChart />
+<CovidChart historicData={historic} title="Covid-19"/>
 <TableContainer />
