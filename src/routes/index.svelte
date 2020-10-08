@@ -4,7 +4,8 @@
     try {
       const usStats = await requests.usStats();
       const historic = await requests.historicUS();
-      return { usStats, historic };
+      const statesData = await requests.statesData()
+      return { usStats, historic, statesData };
     } catch (e) {
       console.log(e)
       this.error(
@@ -24,6 +25,7 @@
 import State from "./[state].svelte";
   export let usStats;
   export let historic;
+  export let statesData
 </script>
 
 <svelte:head>
