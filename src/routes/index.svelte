@@ -24,7 +24,6 @@
 import State from "./[state].svelte";
   export let usStats;
   export let historic;
-  console.log(historic, "historic")
 </script>
 
 <svelte:head>
