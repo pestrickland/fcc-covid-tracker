@@ -26,7 +26,6 @@
   export let usStats;
   export let historic;
   export let statesData;
-  console.log(statesData, "statesData");
 
 </script>
 
